@@ -1,7 +1,6 @@
 
+/* @noSelfInFile */
 // Make a interface for a object called Text
-
-
 
 declare interface Text {
     /**

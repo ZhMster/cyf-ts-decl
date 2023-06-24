@@ -1,16 +1,20 @@
+
 /**
  * Creates a layer that sprites can be placed in. To create your new sprite
  * layer, you'll need to choose a pre-existing layer.
  * @param {string} name - Name of layer
- * @param {string} position - The layer to be positioned preceding to... Should be one of DefaultLayers or the one created, if there's any.
+ * @param {string} position - **[Defaults to `BelowArena`]**  
+ * The layer to be positioned relative/preceding to.   
+ * See `DefaultLayers` for a list of possible values.
  * @param {boolean} below - Whether if the layer should be placed below the layer or above. If true, layer will be placed below.
  * @returns {boolean} - Returns true if the layer was successfully created, false otherwise. 
  */
-declare function CreateLayer(name: string, position: ValidLayerType, below: boolean): boolean
+declare function CreateLayer(name: string, position: ValidLayerType, below: boolean): boolean;
 
 /**
  * The Sprite object has many controls intended for animation. There is a working intermediate example included in the Examples folder.
  */
+/** @noSelf */
 declare interface Sprite {
     /**
      * Returns the path of the image used by this sprite, starting from the Sprites/ folder.
@@ -68,7 +72,7 @@ declare interface Sprite {
      * In retromode (0.2.1a), Returns true if the sprite has been removed and false otherwise.
      * If not in retromode, this is false if the sprite has been removed and true otherwise.
      */
-    readonly isactive: boolean; 
+    readonly isactive: boolean;
     /**
      * Gives the width of the sprite object's active image in pixels.
      * This never changes until the sprite itself is swapped.
@@ -98,12 +102,7 @@ declare interface Sprite {
      * @default 0.5
      */
     ypivot: number;
-   
     
-    
-    
-    
-
     /** 
      * If a sprite has started an animation, this tells you if the animation is complete.
      * 
@@ -152,7 +151,7 @@ declare interface Sprite {
      * If a sprite has an active animation running, you can set this to true to pause it, or false to resume it.
      */
     animationpaused: boolean;
-    
+
     /**
      * Gets the loop mode of a sprite's current animation, or sets the loop mode of a sprite's next animation.
      * 
@@ -161,7 +160,7 @@ declare interface Sprite {
      * ONESHOT - Plays the animation once. The sprite object will remain on the last frame of the animation.
      * ONESHOTEMPTY - Same as ONESHOT, except that when the animation is finished, the sprite object will use an empty sprite.
      */
-    loopmode: "LOOP" | "ONESHOT" | "ONESHOTEMPTY"
+    loopmode: "LOOP" | "ONESHOT" | "ONESHOTEMPTY";
 
     /**
      * Gets or sets the coloration of a sprite, as a table of 3 or 4 values from 0 to 1. 
@@ -208,7 +207,7 @@ declare interface Sprite {
      * Note: It is common practice to use sprite.layer to deparent a sprite if you need to do so. Setting it again will parent the sprite to the given layer, removing its previous parenting altogether.
      */
     layer: DefaultLayers | string;
-    
+
     /**
      * Change a sprite's current image. It retains its scaling and rotation.
      * 
@@ -256,7 +255,7 @@ declare interface Sprite {
      * @param {SpriteMaskMode} mode - The masking mode to set.
      */
     Mask(mode: SpriteMaskMode): void;
-    
+
     /**
      * The shader object linked to this sprite object.
      *
@@ -280,8 +279,8 @@ declare interface Sprite {
      * The origin point of the sprite will change after the usage of this function, meaning moving the sprite to a given relative position
      * (through sprite.Move(), sprite.x or sprite.y) will move the sprite to a different position, centering the sprite's pivot on the new position.
      */
-    SetPivot(x: number, y: number): void ;
-        
+    SetPivot(x: number, y: number): void;
+
     /**
      * Changes the point a sprite anchors to when moving. Works much like `sprite.SetPivot()`, except it takes the sprite's parent into account.
      *
@@ -305,8 +304,8 @@ declare interface Sprite {
      * @see sprite.x and sprite.y
      */
     Move(x: number, y: number): void;
-    
-    
+
+
     /**
      * Moves the sprite to the specified position.
      *
@@ -366,7 +365,7 @@ declare interface Sprite {
      */
     SetAnimation(spriteTable: string[], timePerFrame?: number, prefix?: string): void;
 
-        
+
     /**
      * Stops a frame-by-frame animation if it was running.
      * Does NOT reset your sprite's image back to its previous one! Instead, use `Set()` just after this function.
@@ -443,7 +442,7 @@ declare interface Sprite {
  * @param {number} [childNumber=-1] - The index of the sprite within the layer. Leave it as -1 to have it move to the top of whatever layer it's placed on (default behavior), or choose a numbered index you want it to appear in, with 1 being the very bottom-most in the layer, and higher numbers moving it above other elements in sequence.
  * @returns {Sprite} The created sprite object.
  */
-declare function CreateSprite(spritename: string, layer: string, childNumber: number): Sprite;
+declare function CreateSprite(spritename: string, layer?: string, childNumber?: number): Sprite;
 
 /**
  * Creates a sprite at the center of the screen (at 320, 240) that can be modified in many ways.
@@ -453,4 +452,4 @@ declare function CreateSprite(spritename: string, layer: string, childNumber: nu
  * @param {number} [childNumber=-1] - The index of the sprite within the layer. Default is -1, which moves the sprite to the top of the layer.
  * @returns {sprite} The created sprite object.
  */
-declare function CreateSprite(spritename: string, childNumber: number): Sprite;
+declare function CreateSprite(spritename: string, childNumber?: number): Sprite;

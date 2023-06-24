@@ -1,4 +1,3 @@
-import {Bullet} from "./types/Bullet"
 
 /**
  * Write text to the debug console (toggleable with F9).
@@ -216,7 +215,7 @@ declare function SetPPCollision(usePPCollision: boolean): void;
  * @param {Bullet} bullet - The bullet object that collided with the player.
  * For more information on the bullet object, see the section Projectile Management.
  */
-declare function OnHit(bullet: Bullet): void;
+// declare function OnHit(bullet: Bullet): void;
 
 
 declare function OnTextAdvance(text: Text, final: boolean): void

@@ -1,4 +1,4 @@
-import "./Sprite"
+/** @noSelfInFile */
 
 /**
  * Projectile Class, shouldn't be called directly from typescript.
@@ -7,10 +7,11 @@ import "./Sprite"
  * You can store a bunch of bullets in a table and modify them.   
  * The functions and variables you can use on a Bullet are as follows.  
  */
-declare interface Bullet {
 
+/** @noSelf */
+declare interface Bullet {
     /**
-     *  Bullet.sprite
+     * Bullet.sprite
      * The bullet's sprite component. See the Sprites & Animation section for usage details.
      * NOTE: In 0.2.1a, modifying the sprite does not change the bullet's hitbox yet. it's always the original square of the bullet when it was created.
      *

@@ -1,8 +1,5 @@
 
-// Import the *.d.ts files in this directory, wherever the files are [Sprite, Text, Shader, Bullet]
-// from "./types";
-
-import "./Bullet"
-import "./Shader"
-import "./Sprite"
-import "./Text"
+/// <reference path="./Sprite.d.ts" />
+/// <reference path="./Bullet.d.ts" />
+/// <reference path="./Shader.d.ts" />
+/// <reference path="./Text.d.ts" />
