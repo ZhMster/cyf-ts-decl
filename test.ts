@@ -1,5 +1,3 @@
-
-
 const AnnoyingBullet: Bullet = CreateProjectile('bullet', Arena.width / 2, Arena.height / 2)
 AnnoyingBullet.SetVar('xspeed', 0)
 AnnoyingBullet.SetVar('yspeed', 0)

@@ -3,10 +3,10 @@
  * Creates a layer that sprites can be placed in. To create your new sprite
  * layer, you'll need to choose a pre-existing layer.
  * @param {string} name - Name of layer
- * @param {string} position - **[Defaults to `BelowArena`]**  
+ * @param {string} [position=`BelowArena`] - **[Defaults to `BelowArena`]**  
  * The layer to be positioned relative/preceding to.   
  * See `DefaultLayers` for a list of possible values.
- * @param {boolean} below - Whether if the layer should be placed below the layer or above. If true, layer will be placed below.
+ * @param {boolean} [below=false] - Whether if the layer should be placed below the layer or above. If true, layer will be placed below.
  * @returns {boolean} - Returns true if the layer was successfully created, false otherwise. 
  */
 declare function CreateLayer(name: string, position: ValidLayerType, below: boolean): boolean;
@@ -102,7 +102,7 @@ declare interface Sprite {
      * @default 0.5
      */
     ypivot: number;
-    
+
     /** 
      * If a sprite has started an animation, this tells you if the animation is complete.
      * 

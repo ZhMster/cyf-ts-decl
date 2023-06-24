@@ -1,9 +1,12 @@
-import "../types/Shader"
 
+/// <reference path="../types/index.d.ts" />
+
+import { Shader } from "../types/Shader";
 /**
  * The Misc object provides window-related and computer-related functions.
  */
 declare namespace Misc {
+    
     /**
      * Returns the name of the player's session.
      */
