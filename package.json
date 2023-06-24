@@ -1,0 +1,12 @@
+{
+  "name": "cyf-ts-decl",
+  "version": "0.8.1",
+  "description": "Declarations for CYF to use with TypescriptToLua.",
+  "author": "With'r",
+  "license": "ISC",
+  "types": "index.d.ts",
+  "devDependencies": {
+    "lua-types": "^2.13.1",
+    "typescript-to-lua": "^1.16.2"
+  }
+}
