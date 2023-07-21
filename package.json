@@ -4,7 +4,6 @@
   "description": "Declarations for CYF to use with TypescriptToLua.",
   "author": "With'r",
   "license": "ISC",
-  "types": "index.d.ts",
   "devDependencies": {
     "lua-types": "^2.13.1",
     "typescript": "^5.1.3",

@@ -145,7 +145,7 @@ declare function AllowPlayerDef(enable: boolean): void;
  *
  * @param list_of_strings - An array of strings representing the lines of dialogue to show.
  */
-declare function BattleDialogue(list_of_strings: string[]): void;
+declare function BattleDialog(list_of_strings: string[]): void;
 
 /**
  * Creates a custom state with the given name, which will function like the NONE state.

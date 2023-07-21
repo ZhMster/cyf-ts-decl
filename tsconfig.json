@@ -23,7 +23,6 @@
     "sourceMapTraceback": false
   },
   "include": [
-    "*.ts", 
-    "typings/**/*.d.ts"
+    "./testing/**/*.ts"
   ]
 }
