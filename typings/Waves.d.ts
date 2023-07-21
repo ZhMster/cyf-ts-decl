@@ -5,9 +5,6 @@
 /// <reference path="./types/index.d.ts" />
 /// <reference path="./namespaces/Arena.d.ts" />
 
-// declare const OnHit: (bullet: Bullet) => void;
-
-/**
- * Ends this wave immediately. You can only call this function from the Update function.
- */
-declare function EndWave(): void
+/// <reference path="./loaders/waves/events.d.ts" />
+/// <reference path="./loaders/waves/functions.d.ts" />
+/// <reference path="./loaders/waves/specialvars.d.ts" />
