@@ -9,20 +9,42 @@
  */
 
 /**
- * Color `[r,g,b,a]` withing range [0,1] float, being the last entry sometimes optional.
+ * Color `[r,g,b]` withing range [0,1] float.
  */
-declare type Color = [number, number, number, number];
+declare type Color = [number, number, number];
 /**
- * Color `[r,g,b,a]` withing range [0,255] integer, being the last entry sometimes optional.
+ * Color `[r,g,b]` withing range [0,255] integer.
  */
-declare type Color32 = [number, number, number, number];
+declare type Color32 = [number, number, number];
+
+/**
+ * Color `[r,g,b,a]` withing range [0,1] float.
+ * This specific type should have the 4th property that is **Alpha**.
+ */
+declare type ColorA = [number, number, number, number];
+/**
+ * Color `[r,g,b,a]` withing range [0,255] integer.
+ * This specific type should have the 4th property that is **Alpha**.
+ */
+declare type ColorA32 = [number, number, number, number];
+
+/**
+ * A valid color type for a color that has optionally **Alpha**. `[r,g,b,a]` or `[r,g,b]`.
+ * This type has a range float between `[0, 1]`
+ */
+declare type ColorType = Color | ColorA
+/**
+ * A valid color type for a color that might have **Alpha** or not. `[r,g,b,a]` or `[r,g,b]`.
+ * This type has a range float between `[0, 255]`
+ */
+declare type ColorType32 = Color32 | ColorA32
 
 /**
  * ColorArray, is a array of {@link Color} objects [0,1].
  * 
  * This type is still an array of array of number[4].
  */
-declare type ColorArray = Color[];
+declare type ColorArray = ColorType[];
 
 /* <---------------- Vector4 ----------------> */
 
@@ -93,12 +115,6 @@ declare type Matrix = [
 	[number, number, number, number],
 	[number, number, number, number]
 ];
-
-
-
-
-
-
 
 declare type MatrixArray = Matrix[];
 

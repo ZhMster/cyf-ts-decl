@@ -1,5 +1,5 @@
 
 /// <reference path="./index.d.ts" />
-/// <reference path="./globals.d.ts" />
-/// <reference path="./enums/Sprites.d.ts" />
-/// <reference path="./namespaces/index.d.ts" />
+
+/// <reference path="./loaders/encounter/events.d.ts" />
+/// <reference path="./loaders/encounter/functions.d.ts" />

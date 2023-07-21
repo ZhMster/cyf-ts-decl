@@ -1,5 +1,5 @@
 /// <reference path="./AbstractTypes.d.ts" />
-import "../enums/Shaders"
+import "../helpers/enums/Shaders"
 
 /** @noSelf */
 /**

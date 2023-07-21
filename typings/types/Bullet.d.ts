@@ -6,9 +6,9 @@
  * This is what you use to move around the arena and store values in.  
  * You can store a bunch of bullets in a table and modify them.   
  * The functions and variables you can use on a Bullet are as follows.  
+ * 
+ * @noSelf
  */
-
-/** @noSelf */
 declare interface Bullet {
     /**
      * Bullet.sprite

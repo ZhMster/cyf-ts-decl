@@ -9,7 +9,7 @@ declare enum ShaderWrapMode {
 	 */
 	REPEAT = "repeat",
 	/**
-	 * Similar to "repeat", except all the repeated images will alternatingly be flipped horizontally/vertically.
+	 * Similar to `"repeat"`, except all the repeated images will alternatingly be flipped horizontally/vertically.
 	 */
 	MIRROR = "mirror",
 	/**

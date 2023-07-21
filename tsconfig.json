@@ -24,6 +24,6 @@
   },
   "include": [
     "*.ts", 
-    "typings/Waves.d.ts"
+    "typings/**/*.d.ts"
   ]
 }

@@ -23,7 +23,7 @@ declare enum DefaultLayers {
 }
 
 declare type ValidLayerType = DefaultLayers | string
-declare type SpriteMaskMode =
+declare type C_SpriteMaskMode =
     | 'off'
     | 'box'
     | 'sprite'

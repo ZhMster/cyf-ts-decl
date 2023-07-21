@@ -1,7 +1,9 @@
 
 /* @noSelfInFile */
+
 /**
  * The Player namespace represents the player's character in the game.
+ * @noSelf
  */
 declare namespace Player {
 	/**
