@@ -1,7 +1,27 @@
-# Dependency directory
-# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
-node_modules
-.vscode
-build
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# VS Code files for those working on multiple tools
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 *.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# JetBrains Rider
+*.sln.iml
+
+# Node Dependencies, Build. 
+node_modules
+build
