@@ -7,7 +7,7 @@
  * 
  * @example
  * ```
- * BattleDialog(`${_H_Text.ColorSets.Determination}Stay determined...`)
+ * BattleDialog(`${Text.ColorSets.Determination}Stay determined...`)
  * ```
  */
 declare namespace TextCommandsEx {
