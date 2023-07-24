@@ -117,7 +117,3 @@ declare type Matrix = [
 ];
 
 declare type MatrixArray = Matrix[];
-
-declare type Script = unknown; // I really don't know what type assign to it.
-
-
