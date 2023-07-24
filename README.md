@@ -32,7 +32,7 @@ This project is still **incomplete**, but if you find a way to use this, let me 
       
 # DevNote
 
-I'm not the man of know everything, so there will be some possible errors. And I made them as fast as I can, so I used AI to boost most of process.
+I'm not a man who knows everything, so there will be some possible errors. And I made them as fast as I possible, so I used AI to boost most of process.
 
 If I would tag a version for this, I would say... DECL v**0.2.1** - CYF **v0.6.2.2**
 
