@@ -8,27 +8,18 @@ All important stuff is located in `typings/`, you can use them by adding referen
 /// <reference path="./cyf-ts-decl/typings/Monster.d.ts" />
 /// <reference path="./cyf-ts-decl/typings/Waves.d.ts" />
 ```
-You shouldn't import `index.d.ts`, it'll import only the vars/methods/events that exists both in Encounter, Monster and Waves. 
+You shouldn't import `index.d.ts`, it'll import only the vars/methods/events that exists both in **Encounter**, **Monster** and **Waves** scripts. 
 
 It contains "AbstractTypes" that represents some different types for better representation but in game they might represent simple objects such as array of array, such as [``Color``](https://github.com/ZhMster/cyf-ts-decl/blob/main/typings/types/AbstractTypes.d.ts#L14) and [``Color32``](https://github.com/ZhMster/cyf-ts-decl/blob/main/typings/types/AbstractTypes.d.ts#L18). Also aswell, there is enums such as [``DialogBubbles``](https://github.com/ZhMster/cyf-ts-decl/blob/main/typings/loaders/monster/specialvars.d.ts#L78) and [``DefaultStates``](https://github.com/ZhMster/cyf-ts-decl/blob/main/typings/helpers/enums/State.d.ts#L2).
 
 This project is still **incomplete**, but if you find a way to use this, let me know.
-# Todo
+# Missing stuff/Incomplete
 
-- [x] Modules (8/10) - UI and Inventory isn't done.
-
-- [ ] Bullet & Projectiles
-
-- [ ] Text Object
-- [ ] Sprite Object
-- [ ] Shader Object
-- [ ] Bullet Object
-
-- [ ] Text Commands 
-
-- [ ] Improve TSDoc and Comments.
-
-- [ ] Make TSConfig.json equivalents to place in `Encounters/`, `Monsters/` and `Waves/`.
+- Modules (8/10) - UI and Inventory isn't done.
+- Bullet & Projectiles
+- Text Commands 
+- Improve TSDoc and Comments.
+- Make TSConfig.json equivalents to place in `Encounters/`, `Monsters/` and `Waves/`.
       
 # DevNote
 
