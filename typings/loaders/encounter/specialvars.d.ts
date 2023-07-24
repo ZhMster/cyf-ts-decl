@@ -99,6 +99,7 @@ declare var deathtext: string[];
  */
 declare var deathmusic: string;
 
+declare type Script = unknown; // I really don't know what type assign to it.
 /**
  * A table returning the current wave scripts used. Returns a table with a length of 0 if not in the state DEFENDING.
  */
