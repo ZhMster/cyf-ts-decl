@@ -4,13 +4,13 @@ Contains typescript declarations of [CreateYourFrisk](https://github.com/Rhenaud
 
 All important stuff is located in `typings/`, you can use them by adding reference path on starting of file, The path should be relative or absolute to where is located cyf-declarations. You should only place one of them in their respectives files.
 ```ts
-/// <reference path="./cyf-declarations/typings/Encounter.d.ts" />
-/// <reference path="./cyf-declarations/typings/Monster.d.ts" />
-/// <reference path="./cyf-declarations/typings/Waves.d.ts" />
+/// <reference path="./cyf-ts-decl/typings/Encounter.d.ts" />
+/// <reference path="./cyf-ts-decl/typings/Monster.d.ts" />
+/// <reference path="./cyf-ts-decl/typings/Waves.d.ts" />
 ```
 You shouldn't import `index.d.ts`, it'll import only the vars/methods/events that exists both in Encounter, Monster and Waves. 
 
-It contains "AbstractTypes" that represents some different types for better representation but in game they might represent simple objects such as array of array, such as [``Color``](https://github.com/ZhMster/cyf-declarations/blob/main/typings/types/AbstractTypes.d.ts#L14) and [``Color32``](https://github.com/ZhMster/cyf-declarations/blob/main/typings/types/AbstractTypes.d.ts#L18). Also aswell, there is enums such as [``DialogBubbles``](https://github.com/ZhMster/cyf-declarations/blob/main/typings/loaders/monster/specialvars.d.ts#L78) and [``DefaultStates``](https://github.com/ZhMster/cyf-declarations/blob/main/typings/helpers/enums/State.d.ts#L2).
+It contains "AbstractTypes" that represents some different types for better representation but in game they might represent simple objects such as array of array, such as [``Color``](https://github.com/ZhMster/cyf-ts-decl/blob/main/typings/types/AbstractTypes.d.ts#L14) and [``Color32``](https://github.com/ZhMster/cyf-ts-decl/blob/main/typings/types/AbstractTypes.d.ts#L18). Also aswell, there is enums such as [``DialogBubbles``](https://github.com/ZhMster/cyf-ts-decl/blob/main/typings/loaders/monster/specialvars.d.ts#L78) and [``DefaultStates``](https://github.com/ZhMster/cyf-ts-decl/blob/main/typings/helpers/enums/State.d.ts#L2).
 
 This project is still **incomplete**, but if you find a way to use this, let me know.
 # Todo
