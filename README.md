@@ -15,7 +15,7 @@ It contains "AbstractTypes" that represents some different types for better repr
 This project is still **incomplete**, but if you find a way to use this, let me know.
 # Missing stuff/Incomplete
 
-- Modules (8/10) - UI and Inventory isn't done.
+- Modules (95%)
 - Bullet & Projectiles
 - Text Commands 
 - Improve TSDoc and Comments.
