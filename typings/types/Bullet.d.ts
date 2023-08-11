@@ -1,3 +1,5 @@
+
+/// <reference path="./Sprite.d.ts" />
 /** @noSelfInFile */
 
 /**
@@ -17,7 +19,7 @@ declare interface Bullet {
      *
      * But, in CYF, changing the bullet's sprite does modify the bullet's hitbox!
      */
-    sprite: Sprite
+    sprite: Sprite;
 
 
     /**
